@@ -1,5 +1,5 @@
-n = int(input("Number of ropes"))
-k = int(input("Number of houses"))
+n = int(input("Number of ropes")) # <--- Приберіть текст в інпуті, E-Olymp на це скаржиться 
+k = int(input("Number of houses")) # <--- --//--
 #arr = [int(input()) for i in range(n)]
 l =[]
 i = 0
