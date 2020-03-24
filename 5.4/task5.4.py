@@ -1,7 +1,7 @@
 class HashTable:
 
     def __init__(self):
-        self.max_size = 100000
+        self.max_size = 100000 # <--- Це число повинно бути простим (див. підручник)
         self.current_size = 0
         self.keys = [None]*self.max_size
         self.values = [None]*self.max_size
@@ -48,7 +48,7 @@ class HashTable:
 
 words = HashTable()
 test = []
-file = open("input1.txt", "r")
+file = open("input1.txt", "r") # <--- файл вводу обов'язково повинен мати назву input.txt
 for i in file:
     w = i.split()
     #print(w)
@@ -73,7 +73,7 @@ file.close()
 test = sorted(test)
 #print(test)
 test.sort()
-file1 = open("output1.txt", "w")
+file1 = open("output1.txt", "w") # <--- файл виводу обов'язково повинен мати назву output.txt
 file1.write('\n')
 for i in range(len(words)):
     file1.write(test[i])
